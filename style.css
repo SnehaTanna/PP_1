@@ -1,0 +1,454 @@
+/*CSS Reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Bg color */
+#page1,
+#page2,
+#page3,
+#page4,
+#page5,
+#page6 {
+  background-color: lightblue;
+}
+
+/* Home Page */
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Nav bar: logo */
+#logo {
+  margin: 5px 5px;
+}
+
+#logo img {
+  margin: 6px 8px;
+  height: 64px;
+}
+
+/* Nav Bar: list */
+#navbar ul {
+  display: flex;
+}
+
+#navbar {
+  position: relative;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 79px;
+  font-size: 2rem;
+  color: black;
+}
+
+#main {
+  padding: 50px;
+}
+
+/* Buttons */
+
+#user_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#but1,
+#but2 {
+  padding: 4px 4px;
+  margin: 30px 10px;
+  background-color: rgb(93, 147, 213);
+  border-radius: 10px;
+}
+
+#but1 a,
+#but2 a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#but1 a:hover,
+#but2 a:hover {
+  color: white;
+}
+
+#but1:hover,
+#but2:hover {
+  background-color: rgb(3, 25, 133);
+  border-radius: 100px;
+}
+
+/* Footer section */
+#foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+#foot ul {
+  display: flex;
+}
+
+#foot ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#foot::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#foot ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+#foot ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Login Page */
+
+#new {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+#new_user {
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(93, 147, 213);
+}
+
+#new_user a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+#new_user a:hover {
+  color: white;
+}
+
+#new_user:hover {
+  background-color: rgb(3, 25, 133);
+  border-radius: 100px;
+}
+
+/* login form */
+
+#login_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 79px;
+  font-size: 2rem;
+  color: black;
+}
+
+#logindiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #00000070;
+  padding: 10px 15px;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px;
+  font-size: 1.25rem;
+}
+
+#details:focus {
+  background-color: rgba(254, 255, 254, 0.909);
+}
+
+/* #forget {
+  display: flex;
+  align-items: center;
+
+  #forget ul {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+}
+
+#forget ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+#forget ul li a {
+} */
+
+label.remember {
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+}
+
+#login_but {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#login_but a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+}
+
+#login_but a:hover {
+  color: white;
+}
+
+#login_but:hover {
+  background-color: rgb(3, 25, 133);
+  border-radius: 100px;
+}
+
+/* Signup Page */
+
+#old {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+#old_user {
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(93, 147, 213);
+}
+
+#old_user a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+#old_user a:hover {
+  color: white;
+}
+
+#old_user:hover {
+  background-color: rgb(3, 25, 133);
+  border-radius: 100px;
+}
+
+/* signup form */
+#signup_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 79px;
+  font-size: 2rem;
+  color: black;
+}
+
+#signupdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #00000070;
+  padding: 10px 15px;
+}
+
+#sign_but {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#sign_but a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+}
+
+#sign_but a:hover {
+  color: white;
+}
+
+#sign_but:hover {
+  background-color: rgb(3, 25, 133);
+  border-radius: 100px;
+}
+
+/* page4 - user details */
+#head4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+#years {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+/* .year input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+} */
+
+/* FE Page */
+/* SE Page */
+
+#sem1,
+#sem2,
+#sem3 {
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  overflow-x: auto;
+}
+
+#div1,
+#div2 {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 2rem;
+  color: black;
+}
+
+#subjects {
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+
+.sub {
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.link {
+  justify-content: center;
+  align-items: center;
+}
+
+#cap1,
+#cap2 {
+  font-size: 2.5rem;
+  margin: 15px;
+}
+
+#div1 ul li,
+#div2 ul li {
+  list-style: none;
+  /* font-size: 2rem; */
+}
+
+#div1 ul li a,
+#div1 a,
+#div2 ul li a,
+#div2 a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 20px;
+  border-radius: 20px;
+  color: darkblue;
+}
+
+#div1 ul li a:hover,
+#div1 a:hover,
+#div2 ul li a:hover,
+#div2 a:hover {
+  color: white;
+  background-color: darkblue;
+}
